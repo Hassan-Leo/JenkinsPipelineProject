@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage ('Build Stage') {
+
+            steps {
+               
+                    sh 'npm install --dev'
+             
+            }
+        }
+
+        stage ('Testing Stage') {
+
+            steps {
+              
+                    sh 'npm run test test.js'
+              
+            }
+        }
+
+
+    }
+}
