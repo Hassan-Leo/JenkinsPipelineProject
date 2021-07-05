@@ -4,12 +4,14 @@ pipeline {
     stages {
         stage ('Build Stage') {
             steps   {
-                    bat "npm install"
+                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') 
+                    sh 'npm config ls'
             }
         }
         stage ('Testing Stage') {
             steps   {
-                    bat "npm run test"
+                sh "npm install --dev"
+                sh "npm run test"
             }
         }
     }
