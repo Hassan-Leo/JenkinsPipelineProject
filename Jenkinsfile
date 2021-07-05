@@ -3,23 +3,14 @@ pipeline {
 
     stages {
         stage ('Build Stage') {
-
-            steps {
-               
-                    sh 'npm install'
-             
+            steps   {
+                    bat "npm install"
             }
         }
-
         stage ('Testing Stage') {
-
-            steps {
-              
-                    sh 'npm run test test.js'
-              
+            steps   {
+                    bat "npm run test"
             }
         }
-
-
     }
 }
