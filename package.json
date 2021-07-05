@@ -18,16 +18,16 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
   },
-  "description": "Testing to create pipline between travis and heroku",
+  "description": "Testing to create pipline between jenkins and heroku",
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hassan-Leo/PracticetestCICD.git"
+    "url": "git+https://github.com/Hassan-Leo/JenkinsPipelineProject.git"
   },
   "bugs": {
-    "url": "https://github.com/Hassan-Leo/PracticetestCICD/issues"
+    "url": "https://github.com/Hassan-Leo/JenkinsPipelineProject/issues"
   },
-  "homepage": "https://github.com/Hassan-Leo/PracticetestCICD#readme"
+  "homepage": "https://github.com/Hassan-Leo/JenkinsPipelineProject#readme"
 }
