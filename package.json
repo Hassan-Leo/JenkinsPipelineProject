@@ -15,7 +15,6 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "node-fetch": "^2.6.1"
   },
   "description": "Testing to create pipline between jenkins and heroku",
