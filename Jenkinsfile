@@ -3,8 +3,7 @@ pipeline {
 
     stages {
         stage ('Build Stage') {
-            steps   {
-                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') 
+            steps   { 
                 bat 'npm config ls'
             }
         }
