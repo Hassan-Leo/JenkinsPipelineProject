@@ -5,13 +5,13 @@ pipeline {
         stage ('Build Stage') {
             steps   {
                 nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') 
-                    sh 'npm config ls'
+                bat 'npm config ls'
             }
         }
         stage ('Testing Stage') {
             steps   {
-                sh "npm install --dev"
-                sh "npm run test"
+                bat "npm install --dev"
+                bat "npm run test"
             }
         }
     }
